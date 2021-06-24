@@ -12,12 +12,11 @@ function App() {
   const [filterState, setFilterState] = useState('type')
   const [types, setTypes] = useState([]);
 
-  // todo: would like to figure out how to setup rows for poke evolutions paths. 
-  // have these rows display 1-2-3 across
-  // need to key off of the next_evolution array... if next_evolution.length
-  // maybe use an array prototype that snags first occurence of next_evolution having a length... 
-  // reference the num or name... may be able to key off index - num -1 or something
-  // so, for each of these instances we create a <Row /> component, that has <Card /> components in them
+  // TODO: idea for better filtering. 
+  // add a new hook for an object that will have a type: and weaknesses: key and arrays as value
+  // in my sortTypes function I can add to either key, the specific type I'm passing in. 
+  // use the new state object to be the pivot point for my filters. 
+  // this will allow me to refine my result to be more specific to the filter buttons that were clicked
 
   useEffect(() => {
 
